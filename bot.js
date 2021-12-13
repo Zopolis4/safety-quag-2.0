@@ -76,6 +76,13 @@ let commands = {
                 msg.channel.send("go to ~~brazil~~ the testing server.")
             }
         }
+    },
+
+    "code": {
+        "desc": "Shows source code of bot",
+        "f": function(msg, args) {
+            msg.channel.send("<:quagheart:919110422873915422> Hiya! Thanks for checking ou the source code!! Here's the link:\n    <https://github.com/tobifx0/safety-quag-2.0>");
+        }
     }
 }
 
