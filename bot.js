@@ -81,7 +81,7 @@ let commands = {
     "code": {
         "desc": "Shows source code of bot",
         "f": function(msg, args) {
-            msg.channel.send("<:quagheart:919110422873915422> Hiya! Thanks for checking ou the source code!! Here's the link:\n    <https://github.com/tobifx0/safety-quag-2.0>");
+            msg.channel.send("<:quagheart:919110422873915422> Hiya! Thanks for checking out the source code!! Here's the link:\n    <https://github.com/tobifx0/safety-quag-2.0>");
         }
     }
 }
@@ -110,12 +110,6 @@ function modlog(type, user, text, attachments) {
 client.on('messageCreate', message => {
     data.scamlinks.forEach(link => {
         if (message.content.includes(link)) {
-            message.delete();
-            return;
-        }
-    });
-    data.slurs.forEach(slur => {
-        if (message.content.includes(slur)) {
             message.delete();
             return;
         }
@@ -175,12 +169,6 @@ client.on('messageUpdate', (oldmessage, newmessage) => {
     
     data.scamlinks.forEach(link => {
         if (newmessage.content.includes(link)) {
-            newmessage.delete();
-            return;
-        }
-    });
-    data.slurs.forEach(slur => {
-        if (newmessage.content.includes(slur)) {
             newmessage.delete();
             return;
         }
