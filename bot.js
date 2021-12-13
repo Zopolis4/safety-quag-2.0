@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 
 let token = "";
-let prefix = "!";
+let prefix = ["!", "`!"];
 
 let log_in = "919070736864383016";
 
